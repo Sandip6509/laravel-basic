@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('simple-route', function () {
+    return 'This is Simple Route';
+});
+Route::view('route-with-view','index');
+Route::get('route-controller',[TestController::class,'index']);
+Route::get('route-controller/{id}',[TestController::class,'show']);
+Route::resource('items',ItemController::class);
