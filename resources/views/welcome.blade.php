@@ -25,6 +25,9 @@
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ route('items.index') }}">Resource Route</a></li>
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('user/create') }}">Form Validation</a></li>
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('my-form') }}">Ajax Form Validation</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('check-it') }}?type=2">Create Custom Middleware</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('posts') }}">Ajax Request</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('image-upload') }}">Image Upload</a></li>
                 </ul>
             </div>
             <div class="col">

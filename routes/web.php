@@ -3,6 +3,8 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ImageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,3 +32,14 @@ Route::get('user/create',[HomeController::class,'create']);
 Route::post('user/create',[HomeController::class,'store']);
 Route::get('my-form',[HomeController::class,'myform']);
 Route::post('my-form',[HomeController::class,'myformPost'])->name('my.form');
+Route::get("check-it",[HomeController::class,'checkType'])->middleware('checkType');
+
+Route::controller(PostController::class)->group(function(){
+    Route::get('posts', 'index');
+    Route::post('posts', 'store')->name('posts.store');
+    Route::get('posts/{id}', 'show')->name('posts.show');
+});
+Route::controller(ImageController::class)->group(function(){
+    Route::get('image-upload','index');
+    Route::post('image-upload','store')->name('image.store');
+});
