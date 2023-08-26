@@ -5,6 +5,8 @@ use App\Http\Controllers\ItemController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\FileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,4 +44,13 @@ Route::controller(PostController::class)->group(function(){
 Route::controller(ImageController::class)->group(function(){
     Route::get('image-upload','index');
     Route::post('image-upload','store')->name('image.store');
+    Route::get('ajax-image-upload','ajaxImage');
+    Route::post('ajax-image-upload','ajaxStore')->name('ajaximage.store');
+    Route::get('multiple-image-upload','multipleImage');
+    Route::post('multiple-image-upload','multipleStore')->name('multipleimage.store');
 });
+Route::controller(FileController::class)->group(function(){
+    Route::get('file-upload','index');
+    Route::post('file-upload','store')->name('file.store');
+});
+Route::get('users',[UserController::class,'index']);

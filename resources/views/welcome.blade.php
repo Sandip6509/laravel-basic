@@ -28,6 +28,10 @@
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('check-it') }}?type=2">Create Custom Middleware</a></li>
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('posts') }}">Ajax Request</a></li>
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('image-upload') }}">Image Upload</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('ajax-image-upload') }}">Ajax Image Upload</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('file-upload') }}">File Upload</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('multiple-image-upload') }}">Multple Image Upload</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('users') }}">Pagination</a></li>
                 </ul>
             </div>
             <div class="col">
