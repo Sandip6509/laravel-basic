@@ -14,9 +14,10 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center">Laravel Basic</h1>
+        <h1 class="text-center">Laravel</h1>
         <div class="row">
             <div class="col">
+                <h2>Basic</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('simple-route') }}">Simple Route</a></li>
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('route-with-view') }}">Route with Call View</a></li>
@@ -32,21 +33,24 @@
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('file-upload') }}">File Upload</a></li>
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('multiple-image-upload') }}">Multple Image Upload</a></li>
                     <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('users') }}">Pagination</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ route('ajax.pagination') }}">Ajax Pagination</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('product') }}"> Laravel Model Observers</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Advance</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('custom-validation') }}">Create Custom Validation Rule</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('custom-helpers') }}">Custom Helper function</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('my-helper') }}">Custom Helper Facade Class</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('sandeep') }}">Create Custom Facade</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('helper') }}">Add Custom Configuration File</a></li>
+                    <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('create-custom-log') }}">Create Custom Log File</a></li>
                 </ul>
             </div>
             <div class="col">
                 <ul class="nav flex-column">
-                    <li class="nav-item">dd</li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a href="">Simple Route</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a href="">Simple Route</a></li>
+                <li class="nav-item"><a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="{{ url('simple-route') }}">Simple Route</a></li>
                 </ul>
             </div>
         </div>

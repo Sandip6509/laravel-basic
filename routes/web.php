@@ -1,14 +1,16 @@
 <?php
 
+use App\CustomFacade\Sandeep;
+use App\Http\Controllers\CustomValidationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\FileController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,3 +56,31 @@ Route::controller(FileController::class)->group(function(){
     Route::post('file-upload','store')->name('file.store');
 });
 Route::get('users',[UserController::class,'index']);
+Route::get('ajax-pagination',[UserController::class,'ajaxPagination'])->name('ajax.pagination');
+Route::get('product',[ProductController::class,'index']);
+Route::get('custom-validation',[CustomValidationController::class,'create']);
+Route::post('custom-validation',[CustomValidationController::class,'store'])->name('custom.validation');
+Route::get('custom-helpers', function(){
+    $imageName = 'example.png';
+    $fullpath = productImagePath($imageName);
+    return changeDateFormate(date('Y-m-d'),'m/d/Y'). '<br/> File Path:'.$fullpath;
+});
+
+Route::get('my-helper', function () {
+    return view('myhelper');
+});
+
+Route::get('sandeep', function(){
+    $imagepath = Sandeep::productImagePath('image.jpg');
+    print_r($imagepath);
+});
+
+Route::get('helper', function(){
+    $googleAPIToken = config('google.api_token');
+    dd($googleAPIToken);
+});
+
+Route::get('create-custom-log', function () {
+    \Log::channel('sandeep')->info('This is testing for Sandeep!');
+    dd('done');
+});

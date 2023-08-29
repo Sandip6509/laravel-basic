@@ -13,4 +13,14 @@ class UserController extends Controller
 
         return view('users.users',compact('users'));
     }
+
+    public function ajaxPagination(Request $request)
+    {
+        $data = User::paginate(5);
+        if($request->ajax()){
+            return view('users.table',compact('data'));
+        }
+
+        return view('users.ajax-pagination',compact('data'));
+    }
 }
