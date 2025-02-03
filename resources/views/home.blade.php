@@ -1164,14 +1164,14 @@
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">CRUD</a>
+                            <a class="ms-2" href="{{ route('livewire.livewire-crud') }}">CRUD</a>
                         </li>
                         
                     </ul>
                     <ul class="space-y-2 text-gray-700">
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">Dependant Dropdown Example</a>
+                            <a class="ms-2" href="{{ route('livewire.dependant-dropdown') }}">Dependant Dropdown Example</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 

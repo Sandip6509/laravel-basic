@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\{Model, SoftDeletes};
 
-class Contact extends Model
+class Post extends Model
 {
     use SoftDeletes;
 
