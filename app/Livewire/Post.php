@@ -7,7 +7,14 @@ use Livewire\Component;
 
 class Post extends Component
 {
-    public $posts, $title, $body, $postId;
+    public $posts;
+
+    public $title;
+
+    public $body;
+
+    public $postId;
+
     public $updateMode = false;
 
     protected $listeners = ['deleteConfirmed'];
@@ -15,10 +22,12 @@ class Post extends Component
     public function render()
     {
         $this->posts = ModelsPost::all();
+
         return view('livewire.posts.index');
     }
 
-    private function resetInputFields(){
+    private function resetInputFields()
+    {
         $this->title = '';
         $this->body = '';
     }
@@ -33,7 +42,7 @@ class Post extends Component
         ModelsPost::create($validated);
         $this->dispatch('alert', [
             'type' => 'success',
-            'message' => 'Post Created Successfully!'
+            'message' => 'Post Created Successfully!',
         ]);
         $this->resetInputFields();
     }
@@ -64,7 +73,7 @@ class Post extends Component
         $this->updateMode = false;
         $this->dispatch('alert', [
             'type' => 'success',
-            'message' => 'Post Updated Successfully!'
+            'message' => 'Post Updated Successfully!',
         ]);
         $this->resetInputFields();
     }
@@ -75,13 +84,13 @@ class Post extends Component
             'type' => 'warning',
             'message' => 'Are you sure?',
             'text' => 'If deleted, you will not be able to recover this file!',
-            'post' => $post
+            'post' => $post,
         ]);
     }
 
     public function deleteConfirmed(ModelsPost $post)
     {
-        if($post){
+        if ($post) {
             $post->delete();
             $this->dispatch('swal:deleted');
         }

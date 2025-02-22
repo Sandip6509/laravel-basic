@@ -18,7 +18,7 @@ class NotificationSweetAlert extends Component
         $this->dispatch('swal:modal', [
             'type' => 'success',
             'message' => 'User Created Successfully!',
-            'text' => 'It will list on users table soon.'
+            'text' => 'It will list on users table soon.',
         ]);
     }
 
@@ -27,15 +27,16 @@ class NotificationSweetAlert extends Component
         $this->dispatch('swal:confirm', [
             'type' => 'warning',
             'message' => 'Are you sure?',
-            'text' => 'If deleted, you will not be able to recover this imaginary file!'
+            'text' => 'If deleted, you will not be able to recover this imaginary file!',
         ]);
     }
+
     public function remove()
     {
         $this->dispatch('swal:modal', [
             'type' => 'success',
             'message' => 'User Delete Successfully!',
-            'text' => 'It will not list on users table soon.'
+            'text' => 'It will not list on users table soon.',
         ]);
     }
 }

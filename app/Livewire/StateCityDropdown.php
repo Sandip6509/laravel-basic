@@ -2,9 +2,10 @@
 
 namespace App\Livewire;
 
-use Livewire\Component;
-use App\Models\{City, State};
+use App\Models\City;
+use App\Models\State;
 use Livewire\Attributes\Computed;
+use Livewire\Component;
 
 class StateCityDropdown extends Component
 {
@@ -33,6 +34,7 @@ class StateCityDropdown extends Component
     {
         return City::where('state_id', $this->state)->get();
     }
+
     /**
      * Write code on Method
      *

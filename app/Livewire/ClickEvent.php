@@ -22,6 +22,6 @@ class ClickEvent extends Component
 
     public function showUserId($userId)
     {
-        $this->message = 'User ID is ' . $userId;
+        $this->message = 'User ID is '.$userId;
     }
 }

@@ -15,7 +15,7 @@ class NotificationToastr extends Component
     {
         $this->dispatch('alert', [
             'type' => 'success',
-            'message' => 'User Created Successfully!'
+            'message' => 'User Created Successfully!',
         ]);
     }
 
@@ -23,14 +23,15 @@ class NotificationToastr extends Component
     {
         $this->dispatch('alert', [
             'type' => 'info',
-            'message' => 'Going Well!'
+            'message' => 'Going Well!',
         ]);
     }
+
     public function error()
     {
         $this->dispatch('alert', [
             'type' => 'error',
-            'message' => 'Something went wrong!'
+            'message' => 'Something went wrong!',
         ]);
     }
 }

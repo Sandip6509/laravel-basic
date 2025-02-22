@@ -25,6 +25,7 @@ class ContactForm extends Component
 
         return redirect()->route('livewire.submit-form-request');
     }
+
     public function render()
     {
         return view('livewire.contact-form');
