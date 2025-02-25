@@ -19,4 +19,7 @@ Route::group(['prefix' => 'livewire'], function () {
     Route::view('notification-demo', 'livewire-learn.notification-demo')->name('livewire.notification-demo');
     Route::view('livewire-crud', 'livewire-learn.crud')->name('livewire.livewire-crud');
     Route::view('dependant-dropdown', 'livewire-learn.dependant-dropdown')->name('livewire.dependant-dropdown');
+    Route::view('confirm-delete', 'livewire-learn.confirm-delete')->name('livewire.confirm-delete');
+    Route::view('wizard-form', 'livewire-learn.wizard-form')->name('livewire.wizard-form');
+    // Route::view('file-upload', 'livewire-learn.file-upload')->name('livewire.file-upload');
 });

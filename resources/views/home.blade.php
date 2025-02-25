@@ -1175,11 +1175,11 @@
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">Delete before Confirm</a>
+                            <a class="ms-2" href="{{ route('livewire.confirm-delete')}}">Delete before Confirm</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">Wizard Form</a>
+                            <a class="ms-2" href="{{ route('livewire.wizard-form')}}">Wizard Form</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
