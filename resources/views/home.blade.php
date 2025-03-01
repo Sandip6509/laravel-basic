@@ -1143,73 +1143,58 @@
                 <div class="grid grid-cols-3 gap-6">
                     <ul class="space-y-2 text-gray-700">
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="{{ route('livewire.submit-form-request')}}">Submit Form Request</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.submit-form-request') }}">Submit Form Request</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
+                            <i class="fas fa-check text-green-500"></i>
                             <a class="ms-2" href="{{ route('livewire.change-event') }}">Change Event</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
+                            <i class="fas fa-check text-green-500"></i>
                             <a class="ms-2" href="{{ route('livewire.click-event') }}">Click Event</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
+                            <i class="fas fa-check text-green-500"></i>
                             <a class="ms-2" href="{{ route('livewire.sweetalert') }}">SweetAlert Example</a>
                         </li>
-                        <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="{{ route('livewire.notification-demo') }}">Toastr Notification Example</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="{{ route('livewire.livewire-crud') }}">CRUD</a>
-                        </li>
-                        
                     </ul>
                     <ul class="space-y-2 text-gray-700">
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="{{ route('livewire.dependant-dropdown') }}">Dependant Dropdown Example</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.dependant-dropdown') }}">Dependant Dropdown
+                                Example</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="{{ route('livewire.confirm-delete')}}">Delete before Confirm</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.confirm-delete') }}">Delete before Confirm</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="{{ route('livewire.wizard-form')}}">Wizard Form</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.wizard-form') }}">Wizard Form</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="{{ route('livewire.data-table')}}">Datatables Example</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">CRUD using Auth JetStream</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">using Auth JetStream</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.data-table') }}">Datatables Example</a>
                         </li>
                     </ul>
                     <ul class="space-y-2 text-gray-700">
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
+                            <i class="fas fa-check text-green-500"></i>
                             <a class="ms-2" href="{{ route('livewire.load-more') }}">Load More Records</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">Image Upload</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.image-upload') }}">Image Upload</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">Pagination</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.notification-demo') }}">Toastr Notification
+                                Example</a>
                         </li>
                         <li>
-                            <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">File Upload</a>
+                            <i class="fas fa-check text-green-500"></i>
+                            <a class="ms-2" href="{{ route('livewire.livewire-crud') }}">CRUD</a>
                         </li>
                     </ul>
                 </div>
@@ -1256,7 +1241,6 @@
                 });
             });
 
-            // Set first tab as active by default
             activateTab(tabButtons[0]);
         });
     </script>

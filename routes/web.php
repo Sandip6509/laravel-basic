@@ -23,5 +23,5 @@ Route::group(['prefix' => 'livewire'], function () {
     Route::view('wizard-form', 'livewire-learn.wizard-form')->name('livewire.wizard-form');
     Route::view('data-tables', 'livewire-learn.data-table')->name('livewire.data-table');
     Route::view('load-more', 'livewire-learn.load-more')->name('livewire.load-more');
-    Route::view('file-upload', 'livewire-learn.file-upload')->name('livewire.file-upload');
+    Route::view('image-upload', 'livewire-learn.image-upload')->name('livewire.image-upload');
 });
