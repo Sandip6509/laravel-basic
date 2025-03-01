@@ -2,12 +2,14 @@
 
 namespace App\Livewire;
 
+use App\Models\Product;
 use Livewire\Component;
 
 class WizardForm extends Component
 {
     public $currentStep = 1;
-    public $name, $amount, $description, $status = true, $stock;
+    public $name, $amount, $description, $status = false, $stock;
+    public $successMessage = '';
 
     public function firstStepSubmit()
     {
@@ -32,7 +34,25 @@ class WizardForm extends Component
 
     public function submitForm()
     {
+        Product::create([
 
+            'name' => $this->name,
+
+            'amount' => $this->amount,
+
+            'description' => $this->description,
+
+            'stock' => $this->stock,
+
+            'status' => $this->status,
+
+        ]);
+
+        $this->successMessage = 'Product Created Successfully.';
+
+        $this->resetForm();
+
+        $this->currentStep = 1;
     }
 
     public function back($step)
