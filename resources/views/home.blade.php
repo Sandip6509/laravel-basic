@@ -1183,7 +1183,7 @@
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">Datatables Example</a>
+                            <a class="ms-2" href="{{ route('livewire.data-table')}}">Datatables Example</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
@@ -1197,7 +1197,7 @@
                     <ul class="space-y-2 text-gray-700">
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
-                            <a class="ms-2" href="#">Load More Records</a>
+                            <a class="ms-2" href="{{ route('livewire.load-more') }}">Load More Records</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i> 
