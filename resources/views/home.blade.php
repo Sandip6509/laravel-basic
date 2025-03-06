@@ -976,19 +976,19 @@
                     <ul class="space-y-2 text-gray-700">
                         <li>
                             <i class="fas fa-check text-green-500"></i>
-                            <a class="ms-2" href="#">One to One Relationship</a>
+                            <a class="ms-2" href="{{ route('relationship.one-to-one') }}">One to One Relationship</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i>
-                            <a class="ms-2" href="#">One to Many Relationship</a>
+                            <a class="ms-2" href="{{ route('relationship.one-to-many') }}">One to Many Relationship</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i>
-                            <a class="ms-2" href="#">Many to Many Relationship</a>
+                            <a class="ms-2" href="{{ route('relationship.many-to-many') }}">Many to Many Relationship</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i>
-                            <a class="ms-2" href="#">Has Many Through Relationship</a>
+                            <a class="ms-2" href="{{ route('relationship.has-many-through') }}">Has Many Through Relationship</a>
                         </li>
                         <li>
                             <i class="fas fa-check text-green-500"></i>

@@ -26,6 +26,7 @@ class ConfirmDelete extends Component
     public function render()
     {
         $users = User::all();
+
         return view('livewire.confirm-delete', compact('users'));
     }
 }

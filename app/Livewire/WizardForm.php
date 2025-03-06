@@ -8,7 +8,17 @@ use Livewire\Component;
 class WizardForm extends Component
 {
     public $currentStep = 1;
-    public $name, $amount, $description, $status = false, $stock;
+
+    public $name;
+
+    public $amount;
+
+    public $description;
+
+    public $status = false;
+
+    public $stock;
+
     public $successMessage = '';
 
     public function firstStepSubmit()

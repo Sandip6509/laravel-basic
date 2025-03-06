@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RelationshipController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -24,4 +25,14 @@ Route::group(['prefix' => 'livewire'], function () {
     Route::view('data-tables', 'livewire-learn.data-table')->name('livewire.data-table');
     Route::view('load-more', 'livewire-learn.load-more')->name('livewire.load-more');
     Route::view('image-upload', 'livewire-learn.image-upload')->name('livewire.image-upload');
+});
+
+Route::group(['prefix' => 'relationship'], function () {
+    Route::get('one-to-one', [RelationshipController::class, 'oneToOne'])->name('relationship.one-to-one');
+    Route::get('one-to-many', [RelationshipController::class, 'oneToMany'])->name('relationship.one-to-many');
+    Route::get('many-to-many', [RelationshipController::class, 'manyToMany'])->name('relationship.many-to-many');
+    Route::get('has-many-through', [RelationshipController::class, 'hasManyThrough'])->name('relationship.has-many-through');
+    Route::get('one-to-one-polymorphic', [RelationshipController::class, 'oneToOnePolymorphic'])->name('relationship.one-to-one-polymorphic');
+    Route::get('many-to-many-polymorphic', [RelationshipController::class, 'manyToManyPolymorphic'])->name('relationship.many-to-many-polymorphic');
+    Route::get('eager-loading', [RelationshipController::class, 'eagerLoading'])->name('relationship.eager-loading');
 });

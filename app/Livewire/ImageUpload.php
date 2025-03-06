@@ -10,7 +10,9 @@ class ImageUpload extends Component
 {
     use WithFileUploads;
 
-    public $file, $title;
+    public $file;
+
+    public $title;
 
     public function submit()
     {
@@ -25,6 +27,7 @@ class ImageUpload extends Component
 
         session()->flash('message', 'Image successfully uploaded.');
     }
+
     public function render()
     {
         return view('livewire.image-upload');

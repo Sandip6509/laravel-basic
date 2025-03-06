@@ -3,7 +3,8 @@
 namespace App\Livewire;
 
 use App\Models\User;
-use Livewire\{Component, WithPagination};
+use Livewire\Component;
+use Livewire\WithPagination;
 
 class LoadMore extends Component
 {
@@ -18,10 +19,10 @@ class LoadMore extends Component
         $this->perPage += 5;
     }
 
-
     public function render()
     {
         $users = User::latest()->paginate($this->perPage);
+
         return view('livewire.load-more', compact('users'));
     }
 }
